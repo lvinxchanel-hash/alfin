@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', system-ui, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #070b12;
+    color: #e2e8f0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek range sliders for audio console */
+input[type='range'].pa-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #1e293b;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='range'].pa-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22d3ee;
+  border: 2px solid #0f172a;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.5);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type='range'].pa-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #67e8f9;
+}
+
+input[type='range'].pa-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22d3ee;
+  border: 2px solid #0f172a;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.5);
+  cursor: pointer;
+}
+
+/* Thin subtle scrollbar for side drawer if needed */
+.pa-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.pa-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pa-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 999px;
+}

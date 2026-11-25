@@ -1,0 +1,6 @@
+{
+  "name": "PA-Sim 3D: Simulator Sistem Public Address & Telemetri",
+  "description": "Simulator interaktif 3D sistem Public Address (PA) 100V Line dengan bedah komponen Exploded View, sintesis Web Audio API, dan telemetri sensor real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
